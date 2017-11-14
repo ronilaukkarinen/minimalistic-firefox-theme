@@ -1,0 +1,98 @@
+@namespace url('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul'); 
+
+/* Light color theme */
+:root {
+  --ui-basecolor: #fff;
+  --ui-background: #fff;
+  --ui-darkcolor: #fff;
+  --ui-accent: #0889ff;
+
+  --tab-selection-background-color: var(--ui-basecolor) !important;
+  --tab-hover-background-color: #45545E !important;
+  --chrome-background-color: var(--ui-darkcolor) !important; /* Includes tabstrip background */
+  --chrome-secondary-background-color: var(--ui-basecolor) !important; /* Includes toolbar, urlbar */
+  --url-and-searchbar-background-color: var(--ui-background) !important;
+  --chrome-selection-background-color: var(--ui-accent) !important;
+  --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, 0.07) !important; /* Urlbar border */
+}
+
+/* Move tabs to bottom */
+#TabsToolbar {
+  -moz-box-ordinal-group: 100;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Bookmarks bar under address bar */
+#PersonalToolbar {
+  -moz-box-ordinal-group: 99 !important;
+}
+
+/* Remove space before first tab */
+.tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+  -moz-padding-end: 0 !important;
+  -moz-padding-start: 0 !important;
+}
+
+/* Remove the menu button */
+#PanelUI-menu-button {
+  display: none !important;
+}
+
+/* Consistent styles for tabs on bottom */
+.tabbrowser-tab[usercontextid] .tab-line {
+  background-color: var(--identity-tab-color) !important;
+}
+
+/* New tab button custom shape */
+.tabs-newtab-button {
+  background: none !important;
+  border: 1px transparent !important;
+  margin-left: -1px !important;
+  width: 24px !important;
+  opacity: 0.3 !important;
+}
+
+.tabs-newtab-button:hover {
+  opacity: 1 !important;
+}
+
+.tabbrowser-tab {
+  margin-top: -3px !important;
+
+  /* Remove borders from tabs */
+  -moz-box-align: start !important;
+}
+
+.tabbrowser-tab .tab-line {
+  margin-top: 30px !important;
+}
+
+#tabbrowser-tabs {
+  margin-top: 0;
+  position: relative;
+  background: #fff;  
+}
+
+#TabsToolbar { 
+  height: 25px !important; 
+}
+
+/* Remove space from the left (Mac OS X) */
+hbox.titlebar-placeholder {
+  display: none !important;
+}
+
+#nav-bar {  
+  border-top-width: 0 !important;
+  padding-left: 70px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Fix tab bar barbackground and border */
+#TabsToolbar {
+  background-image: linear-gradient(#f0f0f0, #f6f6f6) !important;
+  border: none !important;
+  box-shadow: none !important;
+}
