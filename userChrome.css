@@ -15,6 +15,38 @@
   --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, .07) !important; /* Urlbar border */
 }
 
+/* Make toolbar icons smaller */
+.toolbarbutton-icon {
+  width: 23px !important;
+}
+
+/* Make identity icon smaller */
+#identity-icon,
+#tracking-protection-icon,
+#connection-icon,
+.notification-anchor-icon,
+#blocked-permissions-container > .blocked-permission-icon,
+#extension-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin-top: 1px !important;
+}
+
+/* Make urlbar icon smaller */
+[uidensity="compact"]:root .urlbar-icon,
+.dropmarker-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Make close icons smaller */
+.close-icon > .button-icon,
+.close-icon > .button-box > .button-icon,
+.close-icon > .toolbarbutton-icon {
+  width: 12px !important;
+  height: 12px !important;
+}
+
 /* Remove top border */
 #browser-panel {
   margin-top: -2px !important;
