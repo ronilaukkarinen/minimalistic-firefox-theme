@@ -4,7 +4,7 @@
 
 This is my "theme" for Firefox Developer Edition. By enabling, you will be able to get Firefox to look like this:
 
-![Screenshot](https://rolle.wtf/minimalistic-firefox-theme.png "Screenshot")
+![Screenshot](https://rolle.wtf/minimalistic-ff.png "Screenshot")
 
 ### Installation
 
