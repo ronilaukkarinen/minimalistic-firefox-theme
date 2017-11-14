@@ -20,6 +20,17 @@
   width: 23px !important;
 }
 
+/* Responsive tab tweaks */
+.scrollbutton-down .toolbarbutton-icon,
+.scrollbutton-up .toolbarbutton-icon {
+  height: 16px !important;
+}
+
+.scrollbutton-down .toolbarbutton-icon,
+.scrollbutton-up .toolbarbutton-icon {
+  width: 12px !important;
+}
+
 /* Make identity icon smaller */
 #identity-icon,
 #tracking-protection-icon,
