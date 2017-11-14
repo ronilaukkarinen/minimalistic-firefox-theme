@@ -97,6 +97,11 @@ hbox.titlebar-placeholder {
   display: none !important;
 }
 
+/* Remove library button */
+#library-button {
+  display: none !important;
+}
+
 #nav-bar {
   border-top-width: 0 !important;
   padding-left: 70px !important;
