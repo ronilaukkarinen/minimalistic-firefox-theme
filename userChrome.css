@@ -57,12 +57,14 @@
   opacity: .3 !important;
 }
 
+/* Tab related */
 .tabs-newtab-button:hover {
   opacity: 1 !important;
 }
 
 .tabbrowser-tab {
   margin-top: -3px !important;
+  color: #888 !important;
 
   /* Remove borders from tabs */
   -moz-box-align: start !important;
@@ -70,16 +72,24 @@
 
 .tabbrowser-tab .tab-line {
   margin-top: 30px !important;
+  background-color: transparent !important;
 }
 
 #tabbrowser-tabs {
-  margin-top: 0;
-  position: relative;
+  margin-top: -3px !important;
+  position: relative !important;
   background: #fff;
 }
 
 #TabsToolbar {
   height: 25px !important;
+}
+
+/* Selected tab tweaks */
+tab[selected] {
+  color: #000 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
 }
 
 /* Remove space from the left (Mac OS X) */
