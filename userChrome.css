@@ -15,6 +15,11 @@
   --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, .07) !important; /* Urlbar border */
 }
 
+/* Remove top border */
+#browser-panel {
+  margin-top: -2px !important;
+}
+
 /* Move tabs to bottom */
 #TabsToolbar {
   -moz-box-ordinal-group: 100;
