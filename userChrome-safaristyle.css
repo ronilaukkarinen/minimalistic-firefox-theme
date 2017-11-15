@@ -162,8 +162,7 @@ hbox.titlebar-placeholder {
 }
 
 /* Fix tab bar background and border */
-#TabsToolbar,
-.scrollbox-innerbox {
+#TabsToolbar {
   background-image: linear-gradient(#f0f0f0, #f6f6f6) !important;
   border: none !important;
   box-shadow: none !important;
@@ -227,8 +226,6 @@ hbox.titlebar-placeholder {
 #TabsToolbar #tabbrowser-tabs {
   background: -moz-linear-gradient(rgb(219, 219, 219), rgb(213, 213, 213)) !important;
   margin-top: -1px !important;
-  max-height: 22px !important;
-  min-height: 22px !important;
   margin-left: -3px !important;
 }
 
@@ -244,7 +241,7 @@ hbox.titlebar-placeholder {
   border-left: 1px solid rgba(0, 0, 0, .15) !important;
   border-right: 1px solid rgba(0, 0, 0, .15) !important;
   padding: 0 !important;
-  margin-top: -2px !important;
+  margin-top: -3px !important;
 }
 
 #TabsToolbar[inFullscreen] .tabbrowser-tab {
@@ -532,13 +529,6 @@ hbox.titlebar-placeholder {
   display: none !important;
 }
 
-#tabbrowser-arrowscrollbox {
-  min-height: 20px !important;
-  height: 22px !important;
-}
-
-#tabbrowser-tabs {
-  height: 23px !important;
-  min-height: 20px !important;
-  margin-top: -1px !important;
+.scrollbox-innerbox {
+  padding-bottom: 1px !important;
 }
