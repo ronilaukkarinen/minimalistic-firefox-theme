@@ -460,8 +460,6 @@ hbox.titlebar-placeholder {
   margin-left: 0 !important;
 }
 
-.tab-throbber, 
-.tab-throbber-fallback, 
 .tab-icon-image, 
 .tab-sharing-icon-overlay {
   width: 14px !important;
