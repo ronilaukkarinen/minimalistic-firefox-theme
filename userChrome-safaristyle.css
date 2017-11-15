@@ -451,6 +451,13 @@ hbox.titlebar-placeholder {
   margin-top: 0 !important;
 }
 
+/* FF 53+ left alignment fix */
+#TabsToolbar .tabbrowser-tab .tab-label-container {
+  -moz-box-ordinal-group: 3 !important;
+  font-size: 12px !important;
+  margin-left: 5px !important;
+}
+
 #TabsToolbar .tabbrowser-tab:hover .tab-label {
   margin-left: 0 !important;
 }
