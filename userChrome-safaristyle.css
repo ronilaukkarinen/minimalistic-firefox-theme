@@ -99,7 +99,7 @@
 
 .tabbrowser-tab *,
 .tab-stack * {
-  font-size: 12px !important;
+  font-size: 11px !important;
 }
 
 /* New tab button custom shape */
@@ -162,7 +162,8 @@ hbox.titlebar-placeholder {
 }
 
 /* Fix tab bar background and border */
-#TabsToolbar {
+#TabsToolbar,
+.scrollbox-innerbox {
   background-image: linear-gradient(#f0f0f0, #f6f6f6) !important;
   border: none !important;
   box-shadow: none !important;
@@ -178,6 +179,7 @@ hbox.titlebar-placeholder {
   margin: 0 13px 0 17px !important;
   text-align: center !important;  
   padding-right: 5px !important;
+  padding-left: 5px;
 }
 
 #urlbar * {
@@ -199,6 +201,7 @@ hbox.titlebar-placeholder {
   box-shadow: 0 0 1px 3px rgba(0, 122, 255, .05) inset, 0 0 0 4px rgba(0, 122, 255, .33) !important;
   background: #fff !important;
   text-align: left !important;
+  padding-left: 10px !important;
 }
 
 #page-proxy-favicon:-moz-window-inactive,
@@ -221,19 +224,18 @@ hbox.titlebar-placeholder {
   text-align: left !important;
 }
 
-#TabsToolbar .tabbrowser-tabs {
+#TabsToolbar #tabbrowser-tabs {
   background: -moz-linear-gradient(rgb(219, 219, 219), rgb(213, 213, 213)) !important;
   margin-top: -1px !important;
   max-height: 22px !important;
-  /* all elements height */
   min-height: 22px !important;
+  margin-left: -3px !important;
 }
 
-#TabsToolbar[inFullscreen] .tabbrowser-tabs {
+#TabsToolbar[inFullscreen] #tabbrowser-tabs {
   margin-top: -11px !important;
   padding-top: 1px !important;
   max-height: 23px !important;
-  /* all elements height in fullscreen */
   min-height: 23px !important;
 }
 
@@ -242,20 +244,19 @@ hbox.titlebar-placeholder {
   border-left: 1px solid rgba(0, 0, 0, .15) !important;
   border-right: 1px solid rgba(0, 0, 0, .15) !important;
   padding: 0 !important;
+  margin-top: -2px !important;
 }
 
 #TabsToolbar[inFullscreen] .tabbrowser-tab {
   margin-top: 0 !important;
-  /* vertical tabs alignment */
 }
 
 #TabsToolbar .tabbrowser-tab:not([pinned]) {
   margin-left: -1px !important;
-  max-width: 100% !important;
   padding-right: 1px !important;
 }
 
-#TabsToolbar .tabbrowser-tabs[positionpinnedtabs] {
+#TabsToolbar #tabbrowser-tabs[positionpinnedtabs] {
   border-top: 1px solid rgba(0, 0, 0, .25) !important;
   margin-left: 1px !important;
 }
@@ -445,11 +446,6 @@ hbox.titlebar-placeholder {
   background: rgb(237, 237, 237) !important;
 }
 
-#TabsToolbar .tabbrowser-tab .tab-icon-sound {
-  -moz-box-ordinal-group: 2 !important;
-  margin-left: 0 !important;
-}
-
 #TabsToolbar:not([inFullscreen]) .tabbrowser-tab .tab-icon-image,
 #TabsToolbar:not([inFullscreen]) .tabbrowser-tab .tab-throbber {
   margin-top: 0 !important;
@@ -471,13 +467,6 @@ hbox.titlebar-placeholder {
   padding: 0 12px !important;
 }
 
-/* FF 53+ left alignment fix */
-#TabsToolbar .tabbrowser-tab .tab-label-container {
-  -moz-box-ordinal-group: 3 !important;
-  font-size: 12px !important;
-  margin-left: 5px !important;
-}
-
 #TabsToolbar .tabbrowser-tab .tab-close-button,
 #TabsToolbar .tabbrowser-tab:hover .tab-icon-image,
 #TabsToolbar .tabbrowser-tab:hover .tab-throbber,
@@ -487,7 +476,7 @@ hbox.titlebar-placeholder {
 }
 
 #TabsToolbar[inFullscreen] .tabbrowser-tab[pinned] .tab-stack {
-  margin-top: -1px !important;
+  margin-top: -2px !important;
 }
 
 #TabsToolbar .tabbrowser-tab:hover .tab-close-button {
@@ -528,4 +517,21 @@ hbox.titlebar-placeholder {
 #identity-box:active {
   background: transparent !important;
   border: none !important;
+}
+
+/* Hide info box and new tab button */
+#identity-box,
+.tabs-newtab-button {
+  display: none !important;
+}
+
+#tabbrowser-arrowscrollbox {
+  min-height: 20px !important;
+  height: 22px !important;
+}
+
+#tabbrowser-tabs {
+  height: 23px !important;
+  min-height: 20px !important;
+  margin-top: -1px !important;
 }
