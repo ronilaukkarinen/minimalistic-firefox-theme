@@ -5,10 +5,10 @@
 ### Installation
 
 1. Go to Library/Application Support/Firefox, find your profile folder and create folder "chrome" (lowercase) under it
-2. Copy userChrome.css file to that folder
+2. Create userChrome.css file to that folder and paste contents of [userChrome.css](https://github.com/ronilaukkarinen/minimalistic-firefox-theme/blob/master/userChrome.css) or [userChrome-safaristyle.css](https://github.com/ronilaukkarinen/minimalistic-firefox-theme/blob/master/userChrome-safaristyle.css) if you prefer Safari UI
 3. Restart Firefox
 
 More tweaking tips in [CustomCSSforFX](https://github.com/Aris-t2/CustomCSSforFx) repository.
 
-![Screenshot](https://rolle.wtf/tweak-ff.png "Screenshot")
-![Screenshot](https://rolle.wtf/minimalistic-ff.png "Screenshot")
+![Screenshot](https://rolle.wtf/ff-safari.png "Screenshot")
+Screenshot of Safari styled Firefox 58.
