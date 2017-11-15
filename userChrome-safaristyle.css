@@ -227,6 +227,7 @@ hbox.titlebar-placeholder {
   background: -moz-linear-gradient(rgb(219, 219, 219), rgb(213, 213, 213)) !important;
   margin-top: -1px !important;
   margin-left: -3px !important;
+  margin-right: -3px !important;
 }
 
 #TabsToolbar[inFullscreen] #tabbrowser-tabs {
@@ -445,7 +446,7 @@ hbox.titlebar-placeholder {
 
 #TabsToolbar:not([inFullscreen]) .tabbrowser-tab .tab-icon-image,
 #TabsToolbar:not([inFullscreen]) .tabbrowser-tab .tab-throbber {
-  margin-top: 0 !important;
+  margin-top: 2px !important;
 }
 
 /* FF 53+ left alignment fix */
