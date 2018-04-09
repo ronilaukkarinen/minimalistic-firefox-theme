@@ -213,6 +213,12 @@ hbox.titlebar-placeholder {
 
 #urlbar * {
   font-size: 11px !important;
+  text-align: center !important;
+}
+
+.anonymous-div,
+.preview-div {
+  text-align: center !important;
 }
 
 .autocomplete-textbox,
