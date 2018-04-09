@@ -267,12 +267,12 @@ hbox.titlebar-placeholder {
 }
 
 /* Safari-like equal tabs */
-.scrollbox-innerbox {
+#tabbrowser-tabs .scrollbox-innerbox {
   padding-bottom: 1px !important;
   display: flex !important;
 }
 
-.tabbrowser-tab:not([pinned]) {
+#tabbrowser-tabs .tabbrowser-tab:not([pinned]) {
   -moz-box-flex: none !important;
   max-width: 100% !important;
   flex: 1 1 0 !important;
