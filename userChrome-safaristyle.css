@@ -194,11 +194,14 @@ hbox.titlebar-placeholder {
   border: 0 !important;
   border-radius: 4px !important;
   box-shadow: 0 0 1px rgba(0, 0, 0, .33) !important;
+  min-height: 20px !important;
   height: 20px !important;
   margin: 0 13px 0 17px !important;
   text-align: center !important;  
   padding-right: 5px !important;
   padding-left: 5px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 #urlbar * {
