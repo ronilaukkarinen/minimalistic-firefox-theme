@@ -189,6 +189,11 @@ hbox.titlebar-placeholder {
 }
 
 /* Url bar tweaks */
+#titlebar {
+  --tab-min-height: 31px;
+  --tab-min-height: 31px !important;
+}
+
 #urlbar {
   background: -moz-linear-gradient(rgb(255, 255, 255), rgb(242, 242, 242)) !important;
   border: 0 !important;
@@ -244,6 +249,12 @@ hbox.titlebar-placeholder {
   background: #fff !important;
   box-shadow: 0 0 1px 3px rgba(0, 122, 255, .05) inset, 0 0 0 4px rgba(0, 122, 255, .33) !important;
   text-align: left !important;
+}
+
+/* Tabs */
+#tabbrowser-tabs {
+  --tab-min-height: 20px;
+  --tab-min-height: 20px !important;
 }
 
 #TabsToolbar #tabbrowser-tabs {
