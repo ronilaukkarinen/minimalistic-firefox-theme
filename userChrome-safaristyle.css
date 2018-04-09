@@ -23,11 +23,35 @@
   --url-and-searchbar-background-color: var(--ui-background) !important;
   --chrome-selection-background-color: var(--ui-accent) !important;
   --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, .07) !important; /* Urlbar border */
+  --backbutton-background: rgba(0, 0, 0, 0) !important;
+  --chrome-nav-buttons-background: rgba(0, 0, 0, 0) !important;
+  --chrome-nav-buttons-hover-background: rgba(0, 0, 0, 0); !important
 }
 
-/* Make toolbar icons smaller */
-.toolbarbutton-icon {
-  width: 23px !important;
+/* Alignment fixes */
+.toolbarbutton-1,
+#navigator-toolbox toolbarbutton:-moz-lwtheme,
+#navigator-toolbox toolbarbutton {
+  padding-top: 0 !important;
+  padding-bottom: 3px !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+/* Make toolbar icons smaller and without background color */
+.toolbarbutton-icon,
+toolbar .toolbarbutton-1 > .toolbarbutton-icon {
+  border: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 1px !important;
+}
+
+.toolbarbutton-icon:hover,
+toolbar .toolbarbutton-1 > .toolbarbutton-icon:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: none !important;
 }
 
 /* Responsive tab tweaks */
