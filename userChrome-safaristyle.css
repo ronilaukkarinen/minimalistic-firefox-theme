@@ -555,3 +555,11 @@ hbox.titlebar-placeholder {
 .scrollbox-innerbox {
   padding-bottom: 1px !important;
 }
+
+/* Remove all favicons
+   If you want to show them, remove next lines */
+
+.tab-icon-image,
+#TabsToolbar .tabbrowser-tab[pinned]:hover .tab-icon-image {
+  display: none !important;
+}
