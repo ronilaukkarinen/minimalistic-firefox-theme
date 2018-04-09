@@ -25,7 +25,8 @@
   --chrome-nav-bar-controls-border-color: rgba(255, 255, 255, .07) !important; /* Urlbar border */
   --backbutton-background: rgba(0, 0, 0, 0) !important;
   --chrome-nav-buttons-background: rgba(0, 0, 0, 0) !important;
-  --chrome-nav-buttons-hover-background: rgba(0, 0, 0, 0); !important
+  --chrome-nav-buttons-hover-background: rgba(0, 0, 0, 0) !important;
+  --urlbar-icon-padding: 5px !important;
 }
 
 /* Alignment fixes */
@@ -79,7 +80,8 @@ toolbar .toolbarbutton-1 > .toolbarbutton-icon:hover {
 
 /* Make urlbar icon smaller */
 [uidensity="compact"]:root .urlbar-icon,
-.dropmarker-icon {
+.dropmarker-icon,
+.urlbar-icon {
   width: 20px !important;
   height: 20px !important;
 }
