@@ -136,10 +136,6 @@ toolbar .toolbarbutton-1 > .toolbarbutton-icon:hover {
 }
 
 /* Tab related */
-.tabs-newtab-button:hover {
-  opacity: 1 !important;
-}
-
 .tabbrowser-tab .tab-line {
   margin-top: 30px !important;
   background-color: transparent !important;
@@ -480,10 +476,6 @@ hbox.titlebar-placeholder {
   margin-left: 5px !important;
 }
 
-#TabsToolbar .tabbrowser-tab:hover .tab-label {
-  margin-left: 0 !important;
-}
-
 .tab-icon-image, 
 .tab-sharing-icon-overlay {
   width: 14px !important;
@@ -494,31 +486,8 @@ hbox.titlebar-placeholder {
   padding: 0 12px !important;
 }
 
-#TabsToolbar .tabbrowser-tab .tab-close-button,
-#TabsToolbar .tabbrowser-tab:hover .tab-icon-image,
-#TabsToolbar .tabbrowser-tab:hover .tab-throbber,
-#TabsToolbar .tabbrowser-tab[pinned]:hover .tab-close-button,
-#TabsToolbar .tabbrowser-tab[pinned] .tab-icon-overlay {
-  display: none !important;
-}
-
 #TabsToolbar[inFullscreen] .tabbrowser-tab[pinned] .tab-stack {
   margin-top: -2px !important;
-}
-
-#TabsToolbar .tabbrowser-tab:hover .tab-close-button {
-  display: block !important;
-  margin-left: -4px !important;
-  margin-right: 2px !important;
-  margin-top: 0 !important;
-}
-
-#TabsToolbar:-moz-window-inactive .tabbrowser-tab:hover .tab-close-button {
-  opacity: .45 !important;
-}
-
-#TabsToolbar .tabbrowser-tab[pinned]:hover .tab-icon-image {
-  display: block !important;
 }
 
 /* Tab loading image */
@@ -558,8 +527,14 @@ hbox.titlebar-placeholder {
 
 /* Remove all favicons
    If you want to show them, remove next lines */
-
 .tab-icon-image,
 #TabsToolbar .tabbrowser-tab[pinned]:hover .tab-icon-image {
+  display: none !important;
+}
+
+/* Remove all close buttons
+   If you want to show them, remove next lines */
+#TabsToolbar .tabbrowser-tab:hover .tab-close-button,
+.tab-close-button {
   display: none !important;
 }
