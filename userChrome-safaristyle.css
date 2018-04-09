@@ -201,8 +201,8 @@ hbox.titlebar-placeholder {
   border: 0 !important;
   border-radius: 4px !important;
   box-shadow: 0 0 1px rgba(0, 0, 0, .33) !important;
-  min-height: 20px !important;
-  height: 20px !important;
+  min-height: 22px !important;
+  height: 22px !important;
   margin: 0 13px 0 17px !important;
   text-align: center !important;  
   padding-right: 5px !important;
@@ -261,8 +261,9 @@ hbox.titlebar-placeholder {
 
 /* Tabs */
 #tabbrowser-tabs {
-  --tab-min-height: 20px;
-  --tab-min-height: 20px !important;
+  --tab-min-height: 23px;
+  --tab-min-height: 23px !important;
+  height: 23px !important;
 }
 
 /* Safari-like equal tabs */
@@ -365,6 +366,8 @@ hbox.titlebar-placeholder {
 
 #TabsToolbar .tabbrowser-tab .tab-label {
   color: rgba(0, 0, 0, .75) !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 #TabsToolbar .tabbrowser-tab:-moz-window-inactive .tab-label {
