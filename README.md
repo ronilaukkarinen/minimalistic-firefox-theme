@@ -9,6 +9,7 @@
 1. Go to Library/Application Support/Firefox, find your profile folder and create folder "chrome" (lowercase) under it
 2. Create userChrome.css file to that folder and paste contents of [userChrome.css](https://github.com/ronilaukkarinen/minimalistic-firefox-theme/blob/master/userChrome.css) or [userChrome-safaristyle.css](https://github.com/ronilaukkarinen/minimalistic-firefox-theme/blob/master/userChrome-safaristyle.css) if you prefer Safari UI
 3. Restart Firefox
+4. **Note:** If you use dark theme or FirefoxDeveloperEdition, you should change the base theme to Light first (**Tools** > **Add-ons** > *Themes*).
 
 More tweaking tips in [CustomCSSforFX](https://github.com/Aris-t2/CustomCSSforFx) repository.
 
