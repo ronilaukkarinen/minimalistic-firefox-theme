@@ -265,6 +265,19 @@ hbox.titlebar-placeholder {
   --tab-min-height: 20px !important;
 }
 
+/* Safari-like equal tabs */
+.scrollbox-innerbox {
+  padding-bottom: 1px !important;
+  display: flex !important;
+}
+
+.tabbrowser-tab:not([pinned]) {
+  -moz-box-flex: none !important;
+  max-width: 100% !important;
+  flex: 1 1 0 !important;
+  text-align: center !important;
+}
+
 #TabsToolbar #tabbrowser-tabs {
   background: -moz-linear-gradient(rgb(219, 219, 219), rgb(213, 213, 213)) !important;
   margin-top: -1px !important;
@@ -541,10 +554,6 @@ hbox.titlebar-placeholder {
 #identity-box,
 .tabs-newtab-button {
   display: none !important;
-}
-
-.scrollbox-innerbox {
-  padding-bottom: 1px !important;
 }
 
 /* Remove all favicons
